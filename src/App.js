@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import FileUploadComponent from "./components/FileUploadComponent";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="flex  items-center justify-center max-h-screen mb-10">
+        <h1 className="text-4xl  mt-48">
+          <i className="fab fa-react flex-auto mr-5 text-cyan-500 rotate-45"></i>
+          React FileUpload
+        </h1>
+      </div>
+      <FileUploadComponent />
+    </>
   );
 }
 
